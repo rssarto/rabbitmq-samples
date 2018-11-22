@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+/home/rssarto/git/rabbitmq-samples/hello-world-app/.metadata/.plugins/org.eclipse.jdt.core
+1275180592.index
+2555320575.index
+2704575003.index

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;newConnection&apos; in &apos;com.rabbitmq.sample.Publisher.main(...)&apos; to &apos;connection&apos;&#x0A;- Original project: &apos;hello-world-app&apos;&#x0A;- Original element: &apos;com.rabbitmq.sample.Publisher.main(String[]).newConnection&apos;&#x0A;- Renamed element: &apos;newConnection&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;newConnection&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java&lt;com.rabbitmq.sample{Publisher.java[Publisher~main~\[QString;@newConnection!408!468!419!431!QConnection;!0!false" name="connection" references="true" stamp="1542926269958" version="1.0"/>
+</session>

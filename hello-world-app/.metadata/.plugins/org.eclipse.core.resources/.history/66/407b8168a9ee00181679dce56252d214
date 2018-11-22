@@ -1,0 +1,5 @@
+package com.rabbitmq.sample;
+
+public class Consumer {
+
+}

@@ -1,0 +1,38 @@
+package com.rabbitmq.sample;
+
+import java.io.IOException;
+import java.util.concurrent.TimeoutException;
+
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.ConnectionFactory;
+
+public class Consumer {
+	
+	public static void main(String[] args) throws IOException, TimeoutException {
+		Connection connection = null;
+		Channel channel = null;
+		
+		try {
+			ConnectionFactory connectionFactory = new ConnectionFactory();
+			connectionFactory.setHost("localhost");
+			connection = connectionFactory.newConnection();
+			
+			channel = connection.createChannel();
+			channel.queueDeclare(Publisher.QUEUE_NAME,false, false, false, null);
+			System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
+			
+			
+			
+		}finally {
+			if( connection != null ) {
+				connection.close();
+			}
+			
+			if( channel != null ) {
+				channel.close();
+			}
+		}		
+	}
+
+}
